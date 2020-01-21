@@ -1,5 +1,5 @@
 require "pry"
-new_gigeon = Hash.new 
+new_pigeon = Hash.new 
 
 def nyc_pigeon_organizer(data)
   data.map do |top_key, v|
