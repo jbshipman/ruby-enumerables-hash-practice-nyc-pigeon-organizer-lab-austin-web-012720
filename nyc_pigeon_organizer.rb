@@ -6,7 +6,8 @@ def nyc_pigeon_organizer(data)
     v.each do |sub_key1, v1|
       v1.each do |v2|
         new_pigeon[v2] ||= {}
-        new_pigeon[v2][]
+        new_pigeon[v2][top_key] ||= []
+        new_pigeon[v2][top_key][]
       end
     end 
   end
