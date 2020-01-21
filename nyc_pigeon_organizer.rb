@@ -1,8 +1,8 @@
-require "pry"
-new_pigeon = Hash.new 
+# require "pry"
+# new_pigeon = Hash.new 
 
 def nyc_pigeon_organizer(data)
-  data.map do |top_key, v|
+  data.map do |(top_key, v), new_pigeon|
     v.each do |sub_key1, v1|
       v1.each do |v2|
         new_pigeon[v2] ||= {}
@@ -13,4 +13,4 @@ def nyc_pigeon_organizer(data)
   end
 end
 
-new_pigeon
+# new_pigeon
